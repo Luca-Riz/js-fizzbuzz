@@ -7,22 +7,20 @@
 // scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-var num;
 var arrayNum = [];
 
 // stampare i numeri da 1 a 100
-for(var i=0; i<100; i++){
-    num = i+1;
+for(var i=1; i<=100; i++){
     
     // se multipli di 3 aggiungere Fizz
-    if(num % 3 == 0 && num % 5 == 0){
-        document.getElementById('numList').innerHTML +=(num+'FizzBuzz <br>');
-    } else if(num % 5 == 0){
-        document.getElementById('numList').innerHTML +=(num+'Buzz <br>');
-    } else if(num % 3 == 0 ){
-        document.getElementById('numList').innerHTML +=(num+'Fizz <br>');
+    if(i % 3 == 0 && i % 5 == 0){
+        document.getElementById('numList').innerHTML +=(i+'FizzBuzz <br>');
+    } else if(i % 5 == 0){
+        document.getElementById('numList').innerHTML +=(i+'Buzz <br>');
+    } else if(i % 3 == 0 ){
+        document.getElementById('numList').innerHTML +=(i+'Fizz <br>');
     } else {
-        document.getElementById('numList').innerHTML +=(num+'<br>');
+        document.getElementById('numList').innerHTML +=(i+'<br>');
     }
 }
 
