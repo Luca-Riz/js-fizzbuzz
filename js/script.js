@@ -7,18 +7,34 @@
 // scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-var arrayNum = [];
+//esercio sopra
+// for(var i=1; i<=100; i++){  
+//     if(i % 3 == 0 && i % 5 == 0){
+//         document.getElementById('numList').innerHTML +=(i+'FizzBuzz <br>');
+//     } else if(i % 5 == 0){
+//         document.getElementById('numList').innerHTML +=(i+'Buzz <br>');
+//     } else if(i % 3 == 0){
+//         document.getElementById('numList').innerHTML +=(i+'Fizz <br>');
+//     } else {
+//         document.getElementById('numList').innerHTML +=(i+'<br>');
+//     }
+// }
+
+//provo con %6 strada diversa
 
 for(var i=1; i<=100; i++){
-    
-    if(i % 3 == 0 && i % 5 == 0){
-        document.getElementById('numList').innerHTML +=(i+'FizzBuzz <br>');
-    } else if(i % 5 == 0){
-        document.getElementById('numList').innerHTML +=(i+'Buzz <br>');
-    } else if(i % 3 == 0 ){
-        document.getElementById('numList').innerHTML +=(i+'Fizz <br>');
-    } else {
-        document.getElementById('numList').innerHTML +=(i+'<br>');
+    document.getElementById('numList').innerHTML +=(i);
+    if (i % 3 == 0){
+        document.getElementById('numList').innerHTML += ('Fizz');
+    }
+    if (i % 5 == 0){
+        document.getElementById('numList').innerHTML += ('Buzz');
+    }
+    if (i % 6 == 0){
+        document.getElementById('numList').innerHTML += ('Boolean');
     }
 }
+
+
+
 
