@@ -23,7 +23,7 @@
 //provo con %6 strada diversa
 
 for(var i=1; i<=100; i++){
-    document.getElementById('numList').innerHTML +=(i);
+    document.getElementById('numList').innerHTML +=('<br>'+i);
     if (i % 3 == 0){
         document.getElementById('numList').innerHTML += ('Fizz');
     }
