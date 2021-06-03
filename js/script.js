@@ -7,7 +7,7 @@
 // scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-//esercio sopra
+//esercizio sopra
 // for(var i=1; i<=100; i++){  
 //     if(i % 3 == 0 && i % 5 == 0){
 //         document.getElementById('numList').innerHTML +=(i+'FizzBuzz <br>');
@@ -20,7 +20,7 @@
 //     }
 // }
 
-//provo con %6 strada diversa
+//%6 - bonus
 
 for(var i=1; i<=100; i++){
     document.getElementById('numList').innerHTML +=('<br>'+i);
