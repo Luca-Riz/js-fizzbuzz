@@ -15,14 +15,12 @@ for(var i=0; i<100; i++){
     num = i+1;
     
     // se multipli di 3 aggiungere Fizz
-    if(num % 3 == 0 && num % 5 != 0){
-        arrayNum.push(num+'Fizz');
-    } // se multipli di 5 aggiungere Buzz
-    else if(num % 5 == 0 && num % 3 != 0){
-        arrayNum.push(num+'Buzz');
-    } // se divisibile sia per e che per 5
-    else if(num % 3 == 0 && num % 5 == 0){
+    if(num % 3 == 0 && num % 5 == 0){
         arrayNum.push(num+'FizzBuzz');
+    } else if(num % 5 == 0){
+        arrayNum.push(num+'Buzz');
+    } else if(num % 3 == 0 ){
+        arrayNum.push(num+'Fizz');
     } else {
         arrayNum.push(num);
     }
