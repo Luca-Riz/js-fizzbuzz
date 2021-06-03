@@ -16,15 +16,13 @@ for(var i=0; i<100; i++){
     
     // se multipli di 3 aggiungere Fizz
     if(num % 3 == 0 && num % 5 == 0){
-        arrayNum.push(num+'FizzBuzz');
+        document.getElementById('numList').innerHTML +=(num+'FizzBuzz <br>');
     } else if(num % 5 == 0){
-        arrayNum.push(num+'Buzz');
+        document.getElementById('numList').innerHTML +=(num+'Buzz <br>');
     } else if(num % 3 == 0 ){
-        arrayNum.push(num+'Fizz');
+        document.getElementById('numList').innerHTML +=(num+'Fizz <br>');
     } else {
-        arrayNum.push(num);
+        document.getElementById('numList').innerHTML +=(num+'<br>');
     }
 }
-
-console.log(arrayNum);
 
