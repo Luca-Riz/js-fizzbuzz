@@ -23,7 +23,7 @@
 //%6 - bonus
 
 for(var i=1; i<=100; i++){
-    document.getElementById('numList').innerHTML +=('<br>'+i);
+    document.getElementById('numList').innerHTML +=(i);
     if (i % 3 == 0){
         document.getElementById('numList').innerHTML += ('Fizz');
     }
@@ -33,6 +33,7 @@ for(var i=1; i<=100; i++){
     if (i % 6 == 0){
         document.getElementById('numList').innerHTML += ('Boolean');
     }
+    document.getElementById('numList').innerHTML +='<br>';
 }
 
 
