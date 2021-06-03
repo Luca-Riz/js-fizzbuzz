@@ -9,10 +9,8 @@
 
 var arrayNum = [];
 
-// stampare i numeri da 1 a 100
 for(var i=1; i<=100; i++){
     
-    // se multipli di 3 aggiungere Fizz
     if(i % 3 == 0 && i % 5 == 0){
         document.getElementById('numList').innerHTML +=(i+'FizzBuzz <br>');
     } else if(i % 5 == 0){
